@@ -9,9 +9,19 @@
   
   
     {
+      "id": "http://localhost:1313/2025/06/07/less-tech-more-me/",
+      "title": "Less Code, More Me",
+      "content_text": "So my first few posts have been about\u0026hellip; well, me. My thoughts, opinions, that kind of thing. Not really much tech. Maybe the Hugo setup post counts, but even that wasn’t super technical — more of a quick overview and what I thought of it.\nI think a lot. Who doesn\u0026rsquo;t? Sometimes it just hits randomly, or when I’m lying there at night sorting through whatever’s on my mind.\nIt’s been kind of nice though.",
+      "url": "http://localhost:1313/2025/06/07/less-tech-more-me/",
+      "date_published": "2025-06-07 00:35:54 +0200 CEST",
+      "tags": ["reflection,writing,life,non-tech"]
+    }
+  
+  , 
+    {
       "id": "http://localhost:1313/2025/06/03/moved-to-berlin/",
       "title": "Berlin Move, New Job, and First Impressions",
-      "content_text": "\u003cp\u003eOn the 31st, I moved to Berlin, which was the reason for the blog outage—or silence, shall we say. But I\u0026rsquo;m now back on track and ready to post some new content related to my new job and my time in Berlin.\u003c/p\u003e\n\u003cp\u003eSo, as of now, I\u0026rsquo;m four days into the new job and settling in pretty comfortably. The new office environment is super welcoming. It\u0026rsquo;s almost like one of those offices you see on TV where people go around high-fiving each other after a successful day. On my second day, the company hosted a self-run auction, which went really well. Afterward, they brought out snacks, beers, and champagne which, of course, was very welcomed.\u003c/p\u003e",
+      "content_text": "On the 31st, I moved to Berlin, which was the reason for the blog outage—or silence, shall we say. But I\u0026rsquo;m now back on track and ready to post some new content related to my new job and my time in Berlin.\nSo, as of now, I\u0026rsquo;m four days into the new job and settling in pretty comfortably. The new office environment is super welcoming. It\u0026rsquo;s almost like one of those offices you see on TV where people go around high-fiving each other after a successful day.",
       "url": "http://localhost:1313/2025/06/03/moved-to-berlin/",
       "date_published": "2025-06-03 10:44:44 +0200 CEST",
       "tags": ["Berlin,Life Update,New Job,Travel,Personal"]
@@ -21,7 +31,7 @@
     {
       "id": "http://localhost:1313/2025/06/03/security-failures-at-my-last-job/",
       "title": "Security Was an Afterthought: The Quiet Failures at a Previous Job",
-      "content_text": "\u003cp\u003eI recently changed jobs and moved to Berlin—which is another story in itself.\u003c/p\u003e\n\u003cp\u003eWhile getting everything set up for my new role, I noticed something. Several days after leaving my last job, I still had access to internal systems: Teams, VPN, project documentation, etc.\u003c/p\u003e\n\u003cp\u003eWhich of course meant I still had access to a lot I definitely shouldn’t have.\u003c/p\u003e\n\u003chr\u003e\n\u003ch3 id=\"some-things-that-still-haunt-me\"\u003eSome Things That Still Haunt Me\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eNo security cameras.\u003c/strong\u003e Not even in places you\u0026rsquo;d expect, like entrances or the server room.\u003c/p\u003e",
+      "content_text": "I recently changed jobs and moved to Berlin—which is another story in itself.\nWhile getting everything set up for my new role, I noticed something. Several days after leaving my last job, I still had access to internal systems: Teams, VPN, project documentation, etc.\nWhich of course meant I still had access to a lot I definitely shouldn’t have.\nSome Things That Still Haunt Me No security cameras. Not even in places you\u0026rsquo;d expect, like entrances or the server room.",
       "url": "http://localhost:1313/2025/06/03/security-failures-at-my-last-job/",
       "date_published": "2025-06-03 00:00:00 +0000 UTC",
       "tags": ["infosec,offboarding,IT process,security culture,HR,exit process"]
@@ -31,7 +41,7 @@
     {
       "id": "http://localhost:1313/2025/05/25/interview-red-flags/",
       "title": "Interview Red Flags I’ve Learned to Watch For",
-      "content_text": "\u003cp\u003eToday I was thinking about interviews and the potential red flags to look out for. It\u0026rsquo;s something I’ve come to care about a lot more, especially after working at a few companies where I probably should’ve walked away before even starting.\u003c/p\u003e\n\u003cp\u003eHere’s a list, in no particular order, of things I’ve noticed over the years:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eTimesheets\u003c/strong\u003e – If they’re still doing manual timesheets, you’re probably in for micromanagement.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eOutdated systems\u003c/strong\u003e – Like printing out forms or filling things by hand. Not a great sign.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u0026ldquo;We’re like a family\u0026rdquo;\u003c/strong\u003e – Usually means cliques, favoritism, and zero boundaries.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u0026ldquo;Everyone helps each other out\u0026rdquo;\u003c/strong\u003e – Translation: no clear responsibilities, lots of dumping.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u0026ldquo;This person fills in because we don’t have that role\u0026rdquo;\u003c/strong\u003e – Sounds like understaffing.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u0026ldquo;Fast-paced, tight deadlines\u0026rdquo;\u003c/strong\u003e – Often just means burnout.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eMSPs (Managed Service Providers)\u003c/strong\u003e – Can be a red flag depending on their structure.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eOn-call expectations\u003c/strong\u003e – Especially if it’s vague or seems constant.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e\u0026ldquo;We’re partners in everything\u0026rdquo;\u003c/strong\u003e – Buzzword soup. Often meaningless.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eNo technical assessment\u003c/strong\u003e – Worrying if it’s a technical role.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eThey look at your CV during the interview\u003c/strong\u003e – Means they’re unprepared.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eContradictory answers between rounds\u003c/strong\u003e – Test for consistency by asking the same question twice.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eLow-energy or visibly unhappy interviewers\u003c/strong\u003e – People usually reflect the culture.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eAggressive or condescending interviewers\u003c/strong\u003e – Speaks for itself.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eNo help during technical questions\u003c/strong\u003e – The good ones support you through it.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eSuper long interviews\u003c/strong\u003e – Time management matters too.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"personal-standouts\"\u003ePersonal standouts\u003c/h3\u003e\n\u003cp\u003eThese ones were the most frustrating in my experience:\u003c/p\u003e",
+      "content_text": "Today I was thinking about interviews and the potential red flags to look out for. It\u0026rsquo;s something I’ve come to care about a lot more, especially after working at a few companies where I probably should’ve walked away before even starting.\nHere’s a list, in no particular order, of things I’ve noticed over the years:\nTimesheets – If they’re still doing manual timesheets, you’re probably in for micromanagement. Outdated systems – Like printing out forms or filling things by hand.",
       "url": "http://localhost:1313/2025/05/25/interview-red-flags/",
       "date_published": "2025-05-25 23:24:52 +0200 CEST",
       "tags": ["interviews,job hunting,career,red flags"]
@@ -41,7 +51,7 @@
     {
       "id": "http://localhost:1313/2025/05/24/my-hugo-setup/",
       "title": "Why I Chose Hugo (And Ditched Jekyll)",
-      "content_text": "\u003cp\u003eWhen creating a blog, you’ve got a ton of options. Some are just not as simple as Hugo. Hugo has its downsides, sure—but for me, the pros easily outweigh the cons.\u003c/p\u003e\n\u003cp\u003eI tried Jekyll at first. The problem? Ruby dependencies. It got annoying fast. I didn’t feel like debugging stuff before I even got to the hard part: actually writing. Weird thing to say as someone in tech, maybe\u0026hellip; but I’d rather save the troubleshooting for when it’s really needed.\u003c/p\u003e",
+      "content_text": "When creating a blog, you’ve got a ton of options. Some are just not as simple as Hugo. Hugo has its downsides, sure—but for me, the pros easily outweigh the cons.\nI tried Jekyll at first. The problem? Ruby dependencies. It got annoying fast. I didn’t feel like debugging stuff before I even got to the hard part: actually writing. Weird thing to say as someone in tech, maybe\u0026hellip; but I’d rather save the troubleshooting for when it’s really needed.",
       "url": "http://localhost:1313/2025/05/24/my-hugo-setup/",
       "date_published": "2025-05-24 00:47:23 +0200 CEST",
       "tags": ["hugo,blogging,static-site,setup"]
@@ -51,7 +61,7 @@
     {
       "id": "http://localhost:1313/2025/05/23/a-fresh-start/",
       "title": "Starting Again",
-      "content_text": "\u003cp\u003e\u003cimg src=\"/images/IMG_2931-2.jpg\" alt=\"Dummy Image\"\u003e\u003c/p\u003e\n\u003cp\u003eFor me, I\u0026rsquo;m the type of person who says I\u0026rsquo;m starting something and means it\u0026hellip; but actually seeing it through? That part tends to fall off.\u003c/p\u003e\n\u003cp\u003eI started a blog in the past, posted maybe once or twice, and that was that. Nothing really came of it.\u003c/p\u003e\n\u003cp\u003eBut recently, I\u0026rsquo;ve been inspired again. A friend of mine, Chris, has been consistently posting content—mostly about Kubernetes and tech stuff he finds interesting. He even runs a YouTube channel. That\u0026rsquo;s probably not something I\u0026rsquo;ll be doing, but seeing his consistency sparked something.\u003c/p\u003e",
+      "content_text": "For me, I\u0026rsquo;m the type of person who says I\u0026rsquo;m starting something and means it\u0026hellip; but actually seeing it through? That part tends to fall off.\nI started a blog in the past, posted maybe once or twice, and that was that. Nothing really came of it.\nBut recently, I\u0026rsquo;ve been inspired again. A friend of mine, Chris, has been consistently posting content—mostly about Kubernetes and tech stuff he finds interesting.",
       "url": "http://localhost:1313/2025/05/23/a-fresh-start/",
       "date_published": "2025-05-23 00:00:00 +0000 UTC",
       "tags": ["personal,blogging,tech,motivation"]

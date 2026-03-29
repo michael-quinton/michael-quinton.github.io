@@ -4,17 +4,19 @@
     <title>Security Observations on Logs from the Matrix</title>
     <link>http://localhost:1313/categories/security-observations/</link>
     <description>Recent content in Security Observations on Logs from the Matrix</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
+    <managingEditor>michael@quinton.io (mikequinton)</managingEditor>
+    <webMaster>michael@quinton.io (mikequinton)</webMaster>
     <copyright>2025 Michael Quinton</copyright>
     <lastBuildDate>Tue, 03 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/security-observations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Security Was an Afterthought: The Quiet Failures at a Previous Job</title>
       <link>http://localhost:1313/2025/06/03/security-failures-at-my-last-job/</link>
-      <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate><author>michael@quinton.io (mikequinton)</author>
       <guid>http://localhost:1313/2025/06/03/security-failures-at-my-last-job/</guid>
-      <description>&lt;p&gt;I recently changed jobs and moved to Berlin—which is another story in itself.&lt;/p&gt;&#xA;&lt;p&gt;While getting everything set up for my new role, I noticed something. Several days after leaving my last job, I still had access to internal systems: Teams, VPN, project documentation, etc.&lt;/p&gt;&#xA;&lt;p&gt;Which of course meant I still had access to a lot I definitely shouldn’t have.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;some-things-that-still-haunt-me&#34;&gt;Some Things That Still Haunt Me&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;No security cameras.&lt;/strong&gt; Not even in places you&amp;rsquo;d expect, like entrances or the server room.&lt;/p&gt;</description>
+      <description>I recently changed jobs and moved to Berlin—which is another story in itself.&#xA;While getting everything set up for my new role, I noticed something. Several days after leaving my last job, I still had access to internal systems: Teams, VPN, project documentation, etc.&#xA;Which of course meant I still had access to a lot I definitely shouldn’t have.&#xA;Some Things That Still Haunt Me No security cameras. Not even in places you&amp;rsquo;d expect, like entrances or the server room.</description>
     </item>
   </channel>
 </rss>

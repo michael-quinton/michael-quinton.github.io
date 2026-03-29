@@ -4,17 +4,19 @@
     <title>Tech on Logs from the Matrix</title>
     <link>http://localhost:1313/tags/tech/</link>
     <description>Recent content in Tech on Logs from the Matrix</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
+    <managingEditor>michael@quinton.io (mikequinton)</managingEditor>
+    <webMaster>michael@quinton.io (mikequinton)</webMaster>
     <copyright>2025 Michael Quinton</copyright>
     <lastBuildDate>Fri, 23 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Starting Again</title>
       <link>http://localhost:1313/2025/05/23/a-fresh-start/</link>
-      <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate><author>michael@quinton.io (mikequinton)</author>
       <guid>http://localhost:1313/2025/05/23/a-fresh-start/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/IMG_2931-2.jpg&#34; alt=&#34;Dummy Image&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;For me, I&amp;rsquo;m the type of person who says I&amp;rsquo;m starting something and means it&amp;hellip; but actually seeing it through? That part tends to fall off.&lt;/p&gt;&#xA;&lt;p&gt;I started a blog in the past, posted maybe once or twice, and that was that. Nothing really came of it.&lt;/p&gt;&#xA;&lt;p&gt;But recently, I&amp;rsquo;ve been inspired again. A friend of mine, Chris, has been consistently posting content—mostly about Kubernetes and tech stuff he finds interesting. He even runs a YouTube channel. That&amp;rsquo;s probably not something I&amp;rsquo;ll be doing, but seeing his consistency sparked something.&lt;/p&gt;</description>
+      <description>For me, I&amp;rsquo;m the type of person who says I&amp;rsquo;m starting something and means it&amp;hellip; but actually seeing it through? That part tends to fall off.&#xA;I started a blog in the past, posted maybe once or twice, and that was that. Nothing really came of it.&#xA;But recently, I&amp;rsquo;ve been inspired again. A friend of mine, Chris, has been consistently posting content—mostly about Kubernetes and tech stuff he finds interesting.</description>
     </item>
   </channel>
 </rss>

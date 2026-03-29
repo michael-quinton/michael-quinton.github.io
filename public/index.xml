@@ -4,52 +4,61 @@
     <title>Logs from the Matrix</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on Logs from the Matrix</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
+    <managingEditor>michael@quinton.io (mikequinton)</managingEditor>
+    <webMaster>michael@quinton.io (mikequinton)</webMaster>
     <copyright>2025 Michael Quinton</copyright>
-    <lastBuildDate>Tue, 03 Jun 2025 10:44:44 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 07 Jun 2025 00:35:54 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Less Code, More Me</title>
+      <link>http://localhost:1313/2025/06/07/less-tech-more-me/</link>
+      <pubDate>Sat, 07 Jun 2025 00:35:54 +0200</pubDate><author>michael@quinton.io (mikequinton)</author>
+      <guid>http://localhost:1313/2025/06/07/less-tech-more-me/</guid>
+      <description>So my first few posts have been about&amp;hellip; well, me. My thoughts, opinions, that kind of thing. Not really much tech. Maybe the Hugo setup post counts, but even that wasn’t super technical — more of a quick overview and what I thought of it.&#xA;I think a lot. Who doesn&amp;rsquo;t? Sometimes it just hits randomly, or when I’m lying there at night sorting through whatever’s on my mind.&#xA;It’s been kind of nice though.</description>
+    </item>
     <item>
       <title>Berlin Move, New Job, and First Impressions</title>
       <link>http://localhost:1313/2025/06/03/moved-to-berlin/</link>
-      <pubDate>Tue, 03 Jun 2025 10:44:44 +0200</pubDate>
+      <pubDate>Tue, 03 Jun 2025 10:44:44 +0200</pubDate><author>michael@quinton.io (mikequinton)</author>
       <guid>http://localhost:1313/2025/06/03/moved-to-berlin/</guid>
-      <description>&lt;p&gt;On the 31st, I moved to Berlin, which was the reason for the blog outage—or silence, shall we say. But I&amp;rsquo;m now back on track and ready to post some new content related to my new job and my time in Berlin.&lt;/p&gt;&#xA;&lt;p&gt;So, as of now, I&amp;rsquo;m four days into the new job and settling in pretty comfortably. The new office environment is super welcoming. It&amp;rsquo;s almost like one of those offices you see on TV where people go around high-fiving each other after a successful day. On my second day, the company hosted a self-run auction, which went really well. Afterward, they brought out snacks, beers, and champagne which, of course, was very welcomed.&lt;/p&gt;</description>
+      <description>On the 31st, I moved to Berlin, which was the reason for the blog outage—or silence, shall we say. But I&amp;rsquo;m now back on track and ready to post some new content related to my new job and my time in Berlin.&#xA;So, as of now, I&amp;rsquo;m four days into the new job and settling in pretty comfortably. The new office environment is super welcoming. It&amp;rsquo;s almost like one of those offices you see on TV where people go around high-fiving each other after a successful day.</description>
     </item>
     <item>
       <title>Security Was an Afterthought: The Quiet Failures at a Previous Job</title>
       <link>http://localhost:1313/2025/06/03/security-failures-at-my-last-job/</link>
-      <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 03 Jun 2025 00:00:00 +0000</pubDate><author>michael@quinton.io (mikequinton)</author>
       <guid>http://localhost:1313/2025/06/03/security-failures-at-my-last-job/</guid>
-      <description>&lt;p&gt;I recently changed jobs and moved to Berlin—which is another story in itself.&lt;/p&gt;&#xA;&lt;p&gt;While getting everything set up for my new role, I noticed something. Several days after leaving my last job, I still had access to internal systems: Teams, VPN, project documentation, etc.&lt;/p&gt;&#xA;&lt;p&gt;Which of course meant I still had access to a lot I definitely shouldn’t have.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;some-things-that-still-haunt-me&#34;&gt;Some Things That Still Haunt Me&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;No security cameras.&lt;/strong&gt; Not even in places you&amp;rsquo;d expect, like entrances or the server room.&lt;/p&gt;</description>
+      <description>I recently changed jobs and moved to Berlin—which is another story in itself.&#xA;While getting everything set up for my new role, I noticed something. Several days after leaving my last job, I still had access to internal systems: Teams, VPN, project documentation, etc.&#xA;Which of course meant I still had access to a lot I definitely shouldn’t have.&#xA;Some Things That Still Haunt Me No security cameras. Not even in places you&amp;rsquo;d expect, like entrances or the server room.</description>
     </item>
     <item>
       <title>Interview Red Flags I’ve Learned to Watch For</title>
       <link>http://localhost:1313/2025/05/25/interview-red-flags/</link>
-      <pubDate>Sun, 25 May 2025 23:24:52 +0200</pubDate>
+      <pubDate>Sun, 25 May 2025 23:24:52 +0200</pubDate><author>michael@quinton.io (mikequinton)</author>
       <guid>http://localhost:1313/2025/05/25/interview-red-flags/</guid>
-      <description>&lt;p&gt;Today I was thinking about interviews and the potential red flags to look out for. It&amp;rsquo;s something I’ve come to care about a lot more, especially after working at a few companies where I probably should’ve walked away before even starting.&lt;/p&gt;&#xA;&lt;p&gt;Here’s a list, in no particular order, of things I’ve noticed over the years:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Timesheets&lt;/strong&gt; – If they’re still doing manual timesheets, you’re probably in for micromanagement.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Outdated systems&lt;/strong&gt; – Like printing out forms or filling things by hand. Not a great sign.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&amp;ldquo;We’re like a family&amp;rdquo;&lt;/strong&gt; – Usually means cliques, favoritism, and zero boundaries.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&amp;ldquo;Everyone helps each other out&amp;rdquo;&lt;/strong&gt; – Translation: no clear responsibilities, lots of dumping.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&amp;ldquo;This person fills in because we don’t have that role&amp;rdquo;&lt;/strong&gt; – Sounds like understaffing.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&amp;ldquo;Fast-paced, tight deadlines&amp;rdquo;&lt;/strong&gt; – Often just means burnout.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;MSPs (Managed Service Providers)&lt;/strong&gt; – Can be a red flag depending on their structure.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;On-call expectations&lt;/strong&gt; – Especially if it’s vague or seems constant.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&amp;ldquo;We’re partners in everything&amp;rdquo;&lt;/strong&gt; – Buzzword soup. Often meaningless.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;No technical assessment&lt;/strong&gt; – Worrying if it’s a technical role.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;They look at your CV during the interview&lt;/strong&gt; – Means they’re unprepared.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Contradictory answers between rounds&lt;/strong&gt; – Test for consistency by asking the same question twice.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Low-energy or visibly unhappy interviewers&lt;/strong&gt; – People usually reflect the culture.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Aggressive or condescending interviewers&lt;/strong&gt; – Speaks for itself.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;No help during technical questions&lt;/strong&gt; – The good ones support you through it.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Super long interviews&lt;/strong&gt; – Time management matters too.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;personal-standouts&#34;&gt;Personal standouts&lt;/h3&gt;&#xA;&lt;p&gt;These ones were the most frustrating in my experience:&lt;/p&gt;</description>
+      <description>Today I was thinking about interviews and the potential red flags to look out for. It&amp;rsquo;s something I’ve come to care about a lot more, especially after working at a few companies where I probably should’ve walked away before even starting.&#xA;Here’s a list, in no particular order, of things I’ve noticed over the years:&#xA;Timesheets – If they’re still doing manual timesheets, you’re probably in for micromanagement. Outdated systems – Like printing out forms or filling things by hand.</description>
     </item>
     <item>
       <title>Why I Chose Hugo (And Ditched Jekyll)</title>
       <link>http://localhost:1313/2025/05/24/my-hugo-setup/</link>
-      <pubDate>Sat, 24 May 2025 00:47:23 +0200</pubDate>
+      <pubDate>Sat, 24 May 2025 00:47:23 +0200</pubDate><author>michael@quinton.io (mikequinton)</author>
       <guid>http://localhost:1313/2025/05/24/my-hugo-setup/</guid>
-      <description>&lt;p&gt;When creating a blog, you’ve got a ton of options. Some are just not as simple as Hugo. Hugo has its downsides, sure—but for me, the pros easily outweigh the cons.&lt;/p&gt;&#xA;&lt;p&gt;I tried Jekyll at first. The problem? Ruby dependencies. It got annoying fast. I didn’t feel like debugging stuff before I even got to the hard part: actually writing. Weird thing to say as someone in tech, maybe&amp;hellip; but I’d rather save the troubleshooting for when it’s really needed.&lt;/p&gt;</description>
+      <description>When creating a blog, you’ve got a ton of options. Some are just not as simple as Hugo. Hugo has its downsides, sure—but for me, the pros easily outweigh the cons.&#xA;I tried Jekyll at first. The problem? Ruby dependencies. It got annoying fast. I didn’t feel like debugging stuff before I even got to the hard part: actually writing. Weird thing to say as someone in tech, maybe&amp;hellip; but I’d rather save the troubleshooting for when it’s really needed.</description>
     </item>
     <item>
       <title>Starting Again</title>
       <link>http://localhost:1313/2025/05/23/a-fresh-start/</link>
-      <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate><author>michael@quinton.io (mikequinton)</author>
       <guid>http://localhost:1313/2025/05/23/a-fresh-start/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/IMG_2931-2.jpg&#34; alt=&#34;Dummy Image&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;For me, I&amp;rsquo;m the type of person who says I&amp;rsquo;m starting something and means it&amp;hellip; but actually seeing it through? That part tends to fall off.&lt;/p&gt;&#xA;&lt;p&gt;I started a blog in the past, posted maybe once or twice, and that was that. Nothing really came of it.&lt;/p&gt;&#xA;&lt;p&gt;But recently, I&amp;rsquo;ve been inspired again. A friend of mine, Chris, has been consistently posting content—mostly about Kubernetes and tech stuff he finds interesting. He even runs a YouTube channel. That&amp;rsquo;s probably not something I&amp;rsquo;ll be doing, but seeing his consistency sparked something.&lt;/p&gt;</description>
+      <description>For me, I&amp;rsquo;m the type of person who says I&amp;rsquo;m starting something and means it&amp;hellip; but actually seeing it through? That part tends to fall off.&#xA;I started a blog in the past, posted maybe once or twice, and that was that. Nothing really came of it.&#xA;But recently, I&amp;rsquo;ve been inspired again. A friend of mine, Chris, has been consistently posting content—mostly about Kubernetes and tech stuff he finds interesting.</description>
     </item>
     <item>
       <title></title>
       <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>michael@quinton.io (mikequinton)</author>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;h1 id=&#34;who-am-i&#34;&gt;Who Am I&lt;/h1&gt;&#xA;&lt;p&gt;Hi, I’m Mike Quinton — a Solutions Engineer working in Berlin. I like to share my journey through infrastructure configs, automation mishaps, and the occasional deep dive into debugging.&lt;/p&gt;&#xA;&lt;p&gt;I’m driven by curiosity and the willingness to learn.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-i-do&#34;&gt;What I Do&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;🛠️ &lt;strong&gt;Infrastructure &amp;amp; Automation&lt;/strong&gt;&lt;br&gt;&#xA;I specialize in designing and maintaining resilient systems — from on-prem to the cloud. I enjoy building repeatable, observable workflows with tools like Terraform, Ansible, and CI/CD pipelines.&lt;/p&gt;</description>
+      <description>Who Am I Hi, I’m Mike Quinton — a Solutions Engineer working in Berlin. I like to share my journey through infrastructure configs, automation mishaps, and the occasional deep dive into debugging.&#xA;I’m driven by curiosity and the willingness to learn.&#xA;What I Do 🛠️ Infrastructure &amp;amp; Automation&#xA;I specialize in designing and maintaining resilient systems — from on-prem to the cloud. I enjoy building repeatable, observable workflows with tools like Terraform, Ansible, and CI/CD pipelines.</description>
     </item>
   </channel>
 </rss>
