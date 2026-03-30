@@ -4,7 +4,7 @@ description: "Reflecting on a recent shift in my writing — fewer tech posts, m
 date: 2025-06-07T00:35:54+02:00
 tags: ["reflection", "writing", "life", "non-tech"]
 author: "Michael Quinton"
-draft: false
+draft: true
 ---
 
 So my first few posts have been about... well, me. My thoughts, opinions, that kind of thing. Not really much tech. Maybe the Hugo setup post counts, but even that wasn’t super technical — more of a quick overview and what I thought of it.
