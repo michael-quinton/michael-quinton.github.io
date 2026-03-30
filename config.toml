@@ -1,6 +1,6 @@
 baseURL = 'https://quinton.io/'
 languageCode = 'en-gb'
-title = 'Logs from the Matrix'
+title = 'mike@berlin:~$'
 rssLimit = 20
 copyright = '2025 Michael Quinton'
 minify = false
