@@ -4,7 +4,7 @@ description: "Personal insights on subtle and not-so-subtle warnings during inte
 date: 2025-05-25T23:24:52+02:00
 tags: ["interviews", "job hunting", "career", "red flags"]
 author: "Michael Quinton"
-draft: false
+draft: true
 ---
 
 Today I was thinking about interviews and the potential red flags to look out for. It's something I’ve come to care about a lot more, especially after working at a few companies where I probably should’ve walked away before even starting.
