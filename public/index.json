@@ -9,12 +9,12 @@
   
   
     {
-      "id": "http://localhost:1313/2025/06/07/less-tech-more-me/",
-      "title": "Less Code, More Me",
-      "content_text": "So my first few posts have been about\u0026hellip; well, me. My thoughts, opinions, that kind of thing. Not really much tech. Maybe the Hugo setup post counts, but even that wasn’t super technical — more of a quick overview and what I thought of it.\nI think a lot. Who doesn\u0026rsquo;t? Sometimes it just hits randomly, or when I’m lying there at night sorting through whatever’s on my mind.\nIt’s been kind of nice though.",
-      "url": "http://localhost:1313/2025/06/07/less-tech-more-me/",
-      "date_published": "2025-06-07 00:35:54 +0200 CEST",
-      "tags": ["reflection,writing,life,non-tech"]
+      "id": "http://localhost:1313/2026/03/30/how-i-built-a-k3s-cluster-to-prepare-for-a-devops-interview/",
+      "title": "How I Built a K3s Home Lab to Prepare for a DevOps Interview",
+      "content_text": "Why I Built This I had a technical interview coming up at a Berlin aerospace startup. The role was Junior DevOps Engineer and the job description was clear — strong Linux, Bash, Git, Ansible, and CI/CD.\nI could have spent two weeks reading documentation. Instead I decided to build something real.\nThe idea was simple: if I\u0026rsquo;m going to talk about Terraform and Ansible in an interview, I should actually have used them recently.",
+      "url": "http://localhost:1313/2026/03/30/how-i-built-a-k3s-cluster-to-prepare-for-a-devops-interview/",
+      "date_published": "2026-03-30 00:51:21 +0200 CEST",
+      "tags": ["kubernetes,k3s,terraform,ansible,devops,homelab,linux"]
     }
   
   , 

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How I Built a K3s Home Lab to Prepare for a DevOps Interview | Logs from the Matrix</title>
+  <link rel="stylesheet" href="http://localhost:1313/assets/css/post.css" />
+  <script defer src="http://localhost:1313/assets/js/lbox.js"></script>
+  
+  <link rel="stylesheet" href="http://localhost:1313/assets/css/common.css" />
+  </head>
+  <body>
+    <main>
+      <nav style="margin-bottom: 2rem;">
+  
+    <a href="/" style="margin-right: 1rem; color: #fff;">Home</a>
+  
+    <a href="/about/" style="margin-right: 1rem; color: #fff;">About</a>
+  
+</nav>
+
+      <header>
+  <a class="site-title" href="http://localhost:1313/">Logs from the Matrix</a>
+</header>
+
+      <section class="article">
+        <div class="article-header">
+          <h2 class="article-title">How I Built a K3s Home Lab to Prepare for a DevOps Interview</h2>
+          
+            <small class="date">Mon Mar 30, 2026</small>
+          
+          <div class="tags">
+            
+              <a href="http://localhost:1313/tags/kubernetes" class="tag">kubernetes</a>
+            
+              <a href="http://localhost:1313/tags/k3s" class="tag">k3s</a>
+            
+              <a href="http://localhost:1313/tags/terraform" class="tag">terraform</a>
+            
+              <a href="http://localhost:1313/tags/ansible" class="tag">ansible</a>
+            
+              <a href="http://localhost:1313/tags/devops" class="tag">devops</a>
+            
+              <a href="http://localhost:1313/tags/homelab" class="tag">homelab</a>
+            
+              <a href="http://localhost:1313/tags/linux" class="tag">linux</a>
+            
+          </div>
+        </div>
+        <div class="content"><h2 id="why-i-built-this">Why I Built This</h2>
+<p>I had a technical interview coming up at a Berlin aerospace startup. The role was Junior DevOps Engineer and the job description was clear — strong Linux, Bash, Git, Ansible, and CI/CD.</p>
+<p>I could have spent two weeks reading documentation. Instead I decided to build something real.</p>
+<p>The idea was simple: if I&rsquo;m going to talk about Terraform and Ansible in an interview, I should actually have used them recently. Not six months ago. This week.</p>
+<p>So I built a 3-node K3s Kubernetes cluster on my local machine using KVM, Terraform, and Ansible. From scratch. In two weeks.</p>
+<h2 id="the-architecture">The Architecture</h2>
+<ul>
+<li><strong>Host:</strong> Ubuntu 24.04 running KVM/libvirt</li>
+<li><strong>Nodes:</strong> 1 master, 2 workers — all Debian 12 cloud images</li>
+<li><strong>Networking:</strong> NAT network with static IP assignments via DHCP MAC binding</li>
+<li><strong>Provisioning:</strong> Terraform with the dmacvicar/libvirt provider</li>
+<li><strong>Configuration:</strong> Ansible with proper role structure</li>
+<li><strong>CI/CD:</strong> GitLab CI pipeline for validation and linting</li>
+</ul>
+<h2 id="the-terraform-setup">The Terraform Setup</h2>
+<p>The core of the infrastructure is a <code>locals</code> block defining all three nodes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-hcl" data-lang="hcl"><span style="display:flex;"><span><span style="color:#66d9ef">locals</span> {
+</span></span><span style="display:flex;"><span>  k3s <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    &#34;k3s-master-1&#34; <span style="color:#f92672">=</span> { os_code_name <span style="color:#f92672">=</span> &#34;bookworm&#34;, octetIP <span style="color:#f92672">=</span> &#34;201&#34;, vcpu <span style="color:#f92672">=</span> 2, memoryMB <span style="color:#f92672">=</span> 2048, incGB <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span> },
+</span></span><span style="display:flex;"><span>    &#34;k3s-worker-1&#34; <span style="color:#f92672">=</span> { os_code_name <span style="color:#f92672">=</span> &#34;bookworm&#34;, octetIP <span style="color:#f92672">=</span> &#34;202&#34;, vcpu <span style="color:#f92672">=</span> 1, memoryMB <span style="color:#f92672">=</span> 1536, incGB <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span> },
+</span></span><span style="display:flex;"><span>    &#34;k3s-worker-2&#34; <span style="color:#f92672">=</span> { os_code_name <span style="color:#f92672">=</span> &#34;bookworm&#34;, octetIP <span style="color:#f92672">=</span> &#34;203&#34;, vcpu <span style="color:#f92672">=</span> 1, memoryMB <span style="color:#f92672">=</span> 1536, incGB <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span> },
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Using <code>for_each</code> over this local means I define the node configuration once and loop over it. No copy-pasting three identical resource blocks.</p>
+<p>MAC addresses are generated dynamically from the IP octet:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-hcl" data-lang="hcl"><span style="display:flex;"><span>mac <span style="color:#f92672">=</span> <span style="color:#66d9ef">format</span>(<span style="color:#e6db74">&#34;52:54:00:00:00:%02x&#34;</span>, <span style="color:#66d9ef">each</span>.<span style="color:#66d9ef">value</span>.<span style="color:#66d9ef">octetIP</span>)
+</span></span></code></pre></div><p>Nodes use backing store volumes rather than full image copies — saves disk space significantly.</p>
+<h2 id="the-ansible-structure">The Ansible Structure</h2>
+<p>Rather than flat playbooks I structured this as proper Ansible roles:</p>
+<pre tabindex="0"><code>ansible/
+├── ansible.cfg
+├── host_prep.yml
+├── k3s-setup.yml
+├── group_vars/
+│   ├── all.yml
+│   ├── k3s_masters.yml
+│   └── k3s_workers.yml
+├── inventory/
+│   ├── production/
+│   └── staging/
+└── roles/
+    ├── common/
+    ├── k3s_master/
+    └── k3s_worker/
+</code></pre><p>Separate inventories for production and staging. Run against either:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ansible-playbook -i inventory/staging k3s-setup.yml
+</span></span><span style="display:flex;"><span>ansible-playbook -i inventory/production k3s-setup.yml
+</span></span></code></pre></div><h2 id="the-cicd-pipeline">The CI/CD Pipeline</h2>
+<p>I added a GitLab CI pipeline that validates and lints on every push:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">stages</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">validate</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">lint</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">terraform-validate</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">stage</span>: <span style="color:#ae81ff">validate</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">image</span>: <span style="color:#ae81ff">hashicorp/terraform:latest</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">script</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">cd terraform</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">terraform init -backend=false</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">terraform validate</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">ansible-lint</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">stage</span>: <span style="color:#ae81ff">lint</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">image</span>: <span style="color:#ae81ff">python:3.11</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">before_script</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">pip install ansible ansible-lint</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">script</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">ansible-lint ansible/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">bash-lint</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">stage</span>: <span style="color:#ae81ff">lint</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">image</span>: <span style="color:#ae81ff">koalaman/shellcheck-alpine:latest</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">script</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">shellcheck ansible/roles/common/files/health_check.sh</span>
+</span></span></code></pre></div><p>Three jobs. Terraform validation, Ansible linting, and Shellcheck on the Bash scripts. If any of them fail the pipeline fails.</p>
+<h2 id="what-broke">What Broke</h2>
+<p><strong>The runner typo</strong> — my first GitHub Actions pipeline sat waiting for 24 hours before I realised I&rsquo;d written <code>unbuntu-latest</code> instead of <code>ubuntu-latest</code>. One letter. Classic.</p>
+<p><strong>set -euo pipefail</strong> — I learned the hard way that <code>set -u</code> treats unbound variables as errors. A script that looked fine would crash immediately if called without arguments because <code>$1</code> didn&rsquo;t exist. Fix: use <code>${1:-}</code> as a default.</p>
+<p><strong>Ansible and libvirtd</strong> — easy to forget to start and enable <code>libvirtd</code> after installing it. Nothing works without it and it fails silently in confusing ways.</p>
+<h2 id="what-i-learned">What I Learned</h2>
+<p>Building something real is completely different from reading about it.</p>
+<p>I understood <code>for_each</code> in Terraform from documentation. But it was only when I was actually looping over three VM definitions and generating MAC addresses dynamically that I really understood why it matters.</p>
+<p>Same with Ansible roles. The folder structure makes complete sense when you&rsquo;re actually separating master and worker configuration across <code>group_vars</code> and seeing how <code>site.yml</code> ties it all together.</p>
+<p>The CI pipeline taught me what linting actually means in practice — not just a concept but a real thing that catches real mistakes. Like the runner name typo.</p>
+<h2 id="the-github-repo">The GitHub Repo</h2>
+<p>Everything is on GitHub if you want to take a look or use it as a starting point:</p>
+<p><a href="https://github.com/michael-quinton/k3s-at-home">github.com/michael-quinton/k3s-at-home</a></p>
+<hr>
+<p><em>Built in Berlin, March 2026.</em></p>
+</div>
+      </section>
+      <footer>
+  <p>&copy; Michael Quinton - 2026 </p>
+</footer>
+    </main>
+  </body>
+</html>

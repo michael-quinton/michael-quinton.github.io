@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Logs from the Matrix</title>
+    <link>http://localhost:1313/tags/linux/</link>
+    <description>Recent content in Linux on Logs from the Matrix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <managingEditor>michael@quinton.io (mikequinton)</managingEditor>
+    <webMaster>michael@quinton.io (mikequinton)</webMaster>
+    <copyright>2025 Michael Quinton</copyright>
+    <lastBuildDate>Mon, 30 Mar 2026 00:51:21 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Built a K3s Home Lab to Prepare for a DevOps Interview</title>
+      <link>http://localhost:1313/2026/03/30/how-i-built-a-k3s-cluster-to-prepare-for-a-devops-interview/</link>
+      <pubDate>Mon, 30 Mar 2026 00:51:21 +0200</pubDate><author>michael@quinton.io (mikequinton)</author>
+      <guid>http://localhost:1313/2026/03/30/how-i-built-a-k3s-cluster-to-prepare-for-a-devops-interview/</guid>
+      <description>Why I Built This I had a technical interview coming up at a Berlin aerospace startup. The role was Junior DevOps Engineer and the job description was clear — strong Linux, Bash, Git, Ansible, and CI/CD.&#xA;I could have spent two weeks reading documentation. Instead I decided to build something real.&#xA;The idea was simple: if I&amp;rsquo;m going to talk about Terraform and Ansible in an interview, I should actually have used them recently.</description>
+    </item>
+  </channel>
+</rss>

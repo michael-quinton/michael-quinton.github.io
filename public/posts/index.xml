@@ -9,14 +9,14 @@
     <managingEditor>michael@quinton.io (mikequinton)</managingEditor>
     <webMaster>michael@quinton.io (mikequinton)</webMaster>
     <copyright>2025 Michael Quinton</copyright>
-    <lastBuildDate>Sat, 07 Jun 2025 00:35:54 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2026 00:51:21 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Less Code, More Me</title>
-      <link>http://localhost:1313/2025/06/07/less-tech-more-me/</link>
-      <pubDate>Sat, 07 Jun 2025 00:35:54 +0200</pubDate><author>michael@quinton.io (mikequinton)</author>
-      <guid>http://localhost:1313/2025/06/07/less-tech-more-me/</guid>
-      <description>So my first few posts have been about&amp;hellip; well, me. My thoughts, opinions, that kind of thing. Not really much tech. Maybe the Hugo setup post counts, but even that wasn’t super technical — more of a quick overview and what I thought of it.&#xA;I think a lot. Who doesn&amp;rsquo;t? Sometimes it just hits randomly, or when I’m lying there at night sorting through whatever’s on my mind.&#xA;It’s been kind of nice though.</description>
+      <title>How I Built a K3s Home Lab to Prepare for a DevOps Interview</title>
+      <link>http://localhost:1313/2026/03/30/how-i-built-a-k3s-cluster-to-prepare-for-a-devops-interview/</link>
+      <pubDate>Mon, 30 Mar 2026 00:51:21 +0200</pubDate><author>michael@quinton.io (mikequinton)</author>
+      <guid>http://localhost:1313/2026/03/30/how-i-built-a-k3s-cluster-to-prepare-for-a-devops-interview/</guid>
+      <description>Why I Built This I had a technical interview coming up at a Berlin aerospace startup. The role was Junior DevOps Engineer and the job description was clear — strong Linux, Bash, Git, Ansible, and CI/CD.&#xA;I could have spent two weeks reading documentation. Instead I decided to build something real.&#xA;The idea was simple: if I&amp;rsquo;m going to talk about Terraform and Ansible in an interview, I should actually have used them recently.</description>
     </item>
     <item>
       <title>Berlin Move, New Job, and First Impressions</title>

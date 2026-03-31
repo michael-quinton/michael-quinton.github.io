@@ -2,29 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/2025/06/07/less-tech-more-me/</loc>
-    <lastmod>2025-06-07T00:35:54+02:00</lastmod>
+    <loc>http://localhost:1313/tags/ansible/</loc>
+    <lastmod>2026-03-30T00:51:21+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/life/</loc>
-    <lastmod>2025-06-07T00:35:54+02:00</lastmod>
+    <loc>http://localhost:1313/tags/devops/</loc>
+    <lastmod>2026-03-30T00:51:21+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/homelab/</loc>
+    <lastmod>2026-03-30T00:51:21+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2026/03/30/how-i-built-a-k3s-cluster-to-prepare-for-a-devops-interview/</loc>
+    <lastmod>2026-03-30T00:51:21+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/k3s/</loc>
+    <lastmod>2026-03-30T00:51:21+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/kubernetes/</loc>
+    <lastmod>2026-03-30T00:51:21+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2026-03-30T00:51:21+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-06-07T00:35:54+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/non-tech/</loc>
-    <lastmod>2025-06-07T00:35:54+02:00</lastmod>
+    <lastmod>2026-03-30T00:51:21+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-06-07T00:35:54+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/reflection/</loc>
-    <lastmod>2025-06-07T00:35:54+02:00</lastmod>
+    <lastmod>2026-03-30T00:51:21+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-06-07T00:35:54+02:00</lastmod>
+    <lastmod>2026-03-30T00:51:21+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/writing/</loc>
-    <lastmod>2025-06-07T00:35:54+02:00</lastmod>
+    <loc>http://localhost:1313/tags/terraform/</loc>
+    <lastmod>2026-03-30T00:51:21+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/berlin/</loc>
     <lastmod>2025-06-03T10:44:44+02:00</lastmod>
