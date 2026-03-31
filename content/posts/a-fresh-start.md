@@ -3,7 +3,7 @@ title: "Starting Again"
 date: 2025-05-23
 tags: ["personal", "blogging", "tech", "motivation"]
 categories: ["journal"]
-draft: false
+draft: true
 ---
 ![Dummy Image](/images/IMG_2931-2.jpg)
 
